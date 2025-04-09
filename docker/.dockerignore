@@ -1,5 +1,7 @@
-**/__pycache__
-**/*.pyc
-.env
-node_modules/
-.git/
+**/venv/
+**/pipeline_w_aws/
+**/.git/
+**/.vscode/
+**/__pycache__/
+*.env
+Dockerfile

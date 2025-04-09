@@ -14,7 +14,7 @@ s3 = boto3.client('s3')
 
 def lambda_handler(event, context):
     try:
-        bucket_name = os.environ['BUCKET_NAME']
+        bucket_name = os.getenv('gabsmarqs-bucket', 'my-default-bucket')
         file_name = f"data/coin-info-{dt.now().strftime('%Y-%m-%dT%H:%M:%S')}.json"
         content = get_json_data()
 
