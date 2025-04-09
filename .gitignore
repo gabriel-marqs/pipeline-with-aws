@@ -1,5 +1,6 @@
 # .gitignore
 venv/
+pipeline_w_aws/
 __pycache__/
 *.pyc
 .env
